@@ -8,7 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-
+find_package(example_interfaces REQUIRED) # for the service
 find_package(std_msgs REQUIRED)
 
 if(BUILD_TESTING)
@@ -33,9 +33,20 @@ ament_target_dependencies(talker rclcpp std_msgs)
 add_executable(listener src/minimal_subscriber.cpp)
 ament_target_dependencies(listener rclcpp std_msgs)
 
+
+# Add the server executable
+add_executable(server src/simple_server.cpp)
+ament_target_dependencies(server rclcpp example_interfaces)
+
+# Add the client executable
+add_executable(client src/simple_client.cpp)
+ament_target_dependencies(client rclcpp example_interfaces)
+
 # Tell ROS 2 where to install the executables so it can find them later
 install(TARGETS
   talker
   listener
+  server
+  client
   DESTINATION lib/${PROJECT_NAME})
 ament_package()
