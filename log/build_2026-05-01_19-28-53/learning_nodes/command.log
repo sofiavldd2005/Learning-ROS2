@@ -1,6 +1,0 @@
-Invoking command in '/home/sofiadeck/learning_ros_ws/build/learning_nodes': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/sofiadeck/learning_ros_ws/learning_nodes -DCMAKE_INSTALL_PREFIX=/home/sofiadeck/learning_ros_ws/install/learning_nodes
-Invoked command in '/home/sofiadeck/learning_ros_ws/build/learning_nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/sofiadeck/learning_ros_ws/learning_nodes -DCMAKE_INSTALL_PREFIX=/home/sofiadeck/learning_ros_ws/install/learning_nodes
-Invoking command in '/home/sofiadeck/learning_ros_ws/build/learning_nodes': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/sofiadeck/learning_ros_ws/build/learning_nodes -- -j4 -l4
-Invoked command in '/home/sofiadeck/learning_ros_ws/build/learning_nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/sofiadeck/learning_ros_ws/build/learning_nodes -- -j4 -l4
-Invoking command in '/home/sofiadeck/learning_ros_ws/build/learning_nodes': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/sofiadeck/learning_ros_ws/build/learning_nodes
-Invoked command in '/home/sofiadeck/learning_ros_ws/build/learning_nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/sofiadeck/learning_ros_ws/build/learning_nodes
