@@ -76,6 +76,20 @@ The Three Parts:
 - Behavior: **Asynchronous** and **preemptible**. You can cancel an action halfway through if the robot is about to hit a cat.
 
 - Best For: High-level behaviors like navigation, arm movements, or complex perception tasks.
+---
+## Parameters
+
+Parameters are **stateful** variables (integers, floats, booleans, strings) that belong to a specific Node. You can read and write to them from the terminal or from other nodes—while the program is running.
+
+---
+## Launch Files
 
 
+Coming from C and FreeRTOS, we have a single `main()` function where I initialize all my  hardware, create my queues, and spawn tasks (xTaskCreate) one by one before starting the scheduler.
 
+In ROS 2, because every node is an independent process, you can't just call a single C++ main() to start the whole rocket. Instead, we use a **Launch File**.
+
+A launch file is a Python script that tells the ROS 2 daemon:
+    1. Which nodes to boot up.
+    2. What initial Parameters to inject into them (so you don't have to use the CLI every time).
+    3. How to rename (remap) topics if needed.

@@ -42,11 +42,23 @@ ament_target_dependencies(server rclcpp example_interfaces)
 add_executable(client src/simple_client.cpp)
 ament_target_dependencies(client rclcpp example_interfaces)
 
+# PID parameters example
+add_executable(pid_tuner src/pid_tuner.cpp)
+ament_target_dependencies(pid_tuner rclcpp)
+
 # Tell ROS 2 where to install the executables so it can find them later
 install(TARGETS
   talker
   listener
   server
   client
+  pid_tuner
   DESTINATION lib/${PROJECT_NAME})
+
+  #launch 
+  # Install launch files.
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 ament_package()
