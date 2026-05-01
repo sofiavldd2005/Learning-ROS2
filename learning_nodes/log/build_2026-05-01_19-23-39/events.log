@@ -1,0 +1,512 @@
+[0.000000] (-) TimerEvent: {}
+[0.000897] (learning_nodes) JobQueued: {'identifier': 'learning_nodes', 'dependencies': OrderedDict()}
+[0.001620] (learning_nodes) JobStarted: {'identifier': 'learning_nodes'}
+[0.050552] (learning_nodes) JobProgress: {'identifier': 'learning_nodes', 'progress': 'cmake'}
+[0.052950] (learning_nodes) Command: {'cmd': ['/usr/bin/cmake', '/home/sofiadeck/learning_ros_ws/learning_nodes', '-DCMAKE_INSTALL_PREFIX=/home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes'], 'cwd': '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes', 'env': OrderedDict({'USER': 'sofiadeck', 'SSH_CLIENT': '192.168.1.85 60447 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/sofiadeck', 'OLDPWD': '/home/sofiadeck/learning_ros_ws', 'LESS': '-R', 'SSH_TTY': '/dev/pts/0', 'ZSH': '/home/sofiadeck/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.6.9', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sofiadeck', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'LC_TERMINAL': 'iTerm2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes', 'SSH_CONNECTION': '192.168.1.85 60447 192.168.1.102 22', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099352] (-) TimerEvent: {}
+[0.200220] (-) TimerEvent: {}
+[0.301254] (-) TimerEvent: {}
+[0.402206] (-) TimerEvent: {}
+[0.503009] (-) TimerEvent: {}
+[0.603779] (-) TimerEvent: {}
+[0.704814] (-) TimerEvent: {}
+[0.805755] (-) TimerEvent: {}
+[0.906782] (-) TimerEvent: {}
+[1.007707] (-) TimerEvent: {}
+[1.108777] (-) TimerEvent: {}
+[1.209692] (-) TimerEvent: {}
+[1.310655] (-) TimerEvent: {}
+[1.411555] (-) TimerEvent: {}
+[1.414521] (learning_nodes) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.511781] (-) TimerEvent: {}
+[1.612681] (-) TimerEvent: {}
+[1.713684] (-) TimerEvent: {}
+[1.814595] (-) TimerEvent: {}
+[1.915458] (-) TimerEvent: {}
+[2.016723] (-) TimerEvent: {}
+[2.117491] (-) TimerEvent: {}
+[2.218369] (-) TimerEvent: {}
+[2.319080] (-) TimerEvent: {}
+[2.356910] (learning_nodes) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.419256] (-) TimerEvent: {}
+[2.467052] (learning_nodes) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.519487] (-) TimerEvent: {}
+[2.620202] (-) TimerEvent: {}
+[2.720825] (-) TimerEvent: {}
+[2.821511] (-) TimerEvent: {}
+[2.922324] (-) TimerEvent: {}
+[2.982544] (learning_nodes) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.017246] (learning_nodes) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.019447] (learning_nodes) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.021923] (learning_nodes) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.022417] (-) TimerEvent: {}
+[3.077964] (learning_nodes) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.122656] (-) TimerEvent: {}
+[3.223371] (-) TimerEvent: {}
+[3.324075] (-) TimerEvent: {}
+[3.424831] (-) TimerEvent: {}
+[3.525567] (-) TimerEvent: {}
+[3.563543] (learning_nodes) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.599134] (learning_nodes) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.600163] (learning_nodes) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.601996] (learning_nodes) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.625724] (-) TimerEvent: {}
+[3.636627] (learning_nodes) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.725918] (-) TimerEvent: {}
+[3.826491] (-) TimerEvent: {}
+[3.927266] (-) TimerEvent: {}
+[4.027965] (-) TimerEvent: {}
+[4.128638] (-) TimerEvent: {}
+[4.229317] (-) TimerEvent: {}
+[4.319302] (learning_nodes) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.329504] (-) TimerEvent: {}
+[4.430138] (-) TimerEvent: {}
+[4.530709] (-) TimerEvent: {}
+[4.631475] (-) TimerEvent: {}
+[4.732281] (-) TimerEvent: {}
+[4.832838] (-) TimerEvent: {}
+[4.933478] (-) TimerEvent: {}
+[4.948307] (learning_nodes) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[5.033685] (-) TimerEvent: {}
+[5.134309] (-) TimerEvent: {}
+[5.234911] (-) TimerEvent: {}
+[5.262245] (learning_nodes) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[5.335038] (-) TimerEvent: {}
+[5.357743] (learning_nodes) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[5.435213] (-) TimerEvent: {}
+[5.480446] (learning_nodes) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.535380] (-) TimerEvent: {}
+[5.607954] (learning_nodes) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.635536] (-) TimerEvent: {}
+[5.736125] (-) TimerEvent: {}
+[5.836717] (-) TimerEvent: {}
+[5.937380] (-) TimerEvent: {}
+[6.037983] (-) TimerEvent: {}
+[6.091296] (learning_nodes) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[6.117960] (learning_nodes) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.138148] (-) TimerEvent: {}
+[6.238737] (-) TimerEvent: {}
+[6.339359] (-) TimerEvent: {}
+[6.440018] (-) TimerEvent: {}
+[6.540723] (-) TimerEvent: {}
+[6.635201] (learning_nodes) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[6.640915] (-) TimerEvent: {}
+[6.711482] (learning_nodes) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[6.741055] (-) TimerEvent: {}
+[6.801402] (learning_nodes) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.841223] (-) TimerEvent: {}
+[6.941805] (-) TimerEvent: {}
+[7.042407] (-) TimerEvent: {}
+[7.142994] (-) TimerEvent: {}
+[7.242823] (learning_nodes) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[7.243404] (-) TimerEvent: {}
+[7.336730] (learning_nodes) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[7.343664] (-) TimerEvent: {}
+[7.444236] (-) TimerEvent: {}
+[7.544789] (-) TimerEvent: {}
+[7.645545] (-) TimerEvent: {}
+[7.746742] (-) TimerEvent: {}
+[7.847351] (-) TimerEvent: {}
+[7.942929] (learning_nodes) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.943669] (learning_nodes) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[7.944127] (learning_nodes) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.947490] (-) TimerEvent: {}
+[7.969142] (learning_nodes) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.036563] (learning_nodes) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[8.037200] (learning_nodes) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[8.047013] (learning_nodes) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.047549] (-) TimerEvent: {}
+[8.056721] (learning_nodes) StdoutLine: {'line': b'-- Configuring done (7.7s)\n'}
+[8.136986] (learning_nodes) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[8.147745] (-) TimerEvent: {}
+[8.157527] (learning_nodes) StdoutLine: {'line': b'-- Build files have been written to: /home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes\n'}
+[8.193635] (learning_nodes) CommandEnded: {'returncode': 0}
+[8.195267] (learning_nodes) JobProgress: {'identifier': 'learning_nodes', 'progress': 'build'}
+[8.197296] (learning_nodes) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes', '--', '-j4', '-l4'], 'cwd': '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes', 'env': OrderedDict({'USER': 'sofiadeck', 'SSH_CLIENT': '192.168.1.85 60447 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/sofiadeck', 'OLDPWD': '/home/sofiadeck/learning_ros_ws', 'LESS': '-R', 'SSH_TTY': '/dev/pts/0', 'ZSH': '/home/sofiadeck/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.6.9', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sofiadeck', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'LC_TERMINAL': 'iTerm2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes', 'SSH_CONNECTION': '192.168.1.85 60447 192.168.1.102 22', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[8.247960] (-) TimerEvent: {}
+[8.348567] (-) TimerEvent: {}
+[8.438335] (learning_nodes) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/minimal_subscriber.cpp.o\x1b[0m\n'}
+[8.439155] (learning_nodes) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/minimal_publisher.cpp.o\x1b[0m\n'}
+[8.448781] (-) TimerEvent: {}
+[8.549532] (-) TimerEvent: {}
+[8.650211] (-) TimerEvent: {}
+[8.750840] (-) TimerEvent: {}
+[8.851457] (-) TimerEvent: {}
+[8.952032] (-) TimerEvent: {}
+[9.052691] (-) TimerEvent: {}
+[9.153523] (-) TimerEvent: {}
+[9.254393] (-) TimerEvent: {}
+[9.355020] (-) TimerEvent: {}
+[9.455635] (-) TimerEvent: {}
+[9.556332] (-) TimerEvent: {}
+[9.657022] (-) TimerEvent: {}
+[9.757720] (-) TimerEvent: {}
+[9.858404] (-) TimerEvent: {}
+[9.959058] (-) TimerEvent: {}
+[10.059751] (-) TimerEvent: {}
+[10.160420] (-) TimerEvent: {}
+[10.261106] (-) TimerEvent: {}
+[10.361771] (-) TimerEvent: {}
+[10.462447] (-) TimerEvent: {}
+[10.563162] (-) TimerEvent: {}
+[10.663816] (-) TimerEvent: {}
+[10.764535] (-) TimerEvent: {}
+[10.865241] (-) TimerEvent: {}
+[10.965842] (-) TimerEvent: {}
+[11.066515] (-) TimerEvent: {}
+[11.167242] (-) TimerEvent: {}
+[11.268054] (-) TimerEvent: {}
+[11.368827] (-) TimerEvent: {}
+[11.469587] (-) TimerEvent: {}
+[11.570436] (-) TimerEvent: {}
+[11.671149] (-) TimerEvent: {}
+[11.771817] (-) TimerEvent: {}
+[11.872574] (-) TimerEvent: {}
+[11.973440] (-) TimerEvent: {}
+[12.074299] (-) TimerEvent: {}
+[12.175187] (-) TimerEvent: {}
+[12.275969] (-) TimerEvent: {}
+[12.376791] (-) TimerEvent: {}
+[12.477555] (-) TimerEvent: {}
+[12.578325] (-) TimerEvent: {}
+[12.679215] (-) TimerEvent: {}
+[12.780031] (-) TimerEvent: {}
+[12.880729] (-) TimerEvent: {}
+[12.981513] (-) TimerEvent: {}
+[13.082339] (-) TimerEvent: {}
+[13.183071] (-) TimerEvent: {}
+[13.283786] (-) TimerEvent: {}
+[13.384548] (-) TimerEvent: {}
+[13.485287] (-) TimerEvent: {}
+[13.586200] (-) TimerEvent: {}
+[13.687265] (-) TimerEvent: {}
+[13.788040] (-) TimerEvent: {}
+[13.888836] (-) TimerEvent: {}
+[13.989710] (-) TimerEvent: {}
+[14.090500] (-) TimerEvent: {}
+[14.191275] (-) TimerEvent: {}
+[14.291985] (-) TimerEvent: {}
+[14.392722] (-) TimerEvent: {}
+[14.493710] (-) TimerEvent: {}
+[14.594442] (-) TimerEvent: {}
+[14.695167] (-) TimerEvent: {}
+[14.795926] (-) TimerEvent: {}
+[14.896614] (-) TimerEvent: {}
+[14.997515] (-) TimerEvent: {}
+[15.098422] (-) TimerEvent: {}
+[15.199165] (-) TimerEvent: {}
+[15.299855] (-) TimerEvent: {}
+[15.400667] (-) TimerEvent: {}
+[15.501634] (-) TimerEvent: {}
+[15.602373] (-) TimerEvent: {}
+[15.703041] (-) TimerEvent: {}
+[15.803725] (-) TimerEvent: {}
+[15.904470] (-) TimerEvent: {}
+[16.005175] (-) TimerEvent: {}
+[16.105907] (-) TimerEvent: {}
+[16.206664] (-) TimerEvent: {}
+[16.307432] (-) TimerEvent: {}
+[16.408446] (-) TimerEvent: {}
+[16.509424] (-) TimerEvent: {}
+[16.610266] (-) TimerEvent: {}
+[16.710995] (-) TimerEvent: {}
+[16.811769] (-) TimerEvent: {}
+[16.912491] (-) TimerEvent: {}
+[17.013277] (-) TimerEvent: {}
+[17.113990] (-) TimerEvent: {}
+[17.214700] (-) TimerEvent: {}
+[17.315487] (-) TimerEvent: {}
+[17.416223] (-) TimerEvent: {}
+[17.517070] (-) TimerEvent: {}
+[17.617749] (-) TimerEvent: {}
+[17.718512] (-) TimerEvent: {}
+[17.819246] (-) TimerEvent: {}
+[17.920148] (-) TimerEvent: {}
+[18.021122] (-) TimerEvent: {}
+[18.121851] (-) TimerEvent: {}
+[18.222617] (-) TimerEvent: {}
+[18.323467] (-) TimerEvent: {}
+[18.424430] (-) TimerEvent: {}
+[18.525231] (-) TimerEvent: {}
+[18.626005] (-) TimerEvent: {}
+[18.726721] (-) TimerEvent: {}
+[18.827476] (-) TimerEvent: {}
+[18.928218] (-) TimerEvent: {}
+[19.028975] (-) TimerEvent: {}
+[19.129710] (-) TimerEvent: {}
+[19.230492] (-) TimerEvent: {}
+[19.331220] (-) TimerEvent: {}
+[19.431961] (-) TimerEvent: {}
+[19.532708] (-) TimerEvent: {}
+[19.633563] (-) TimerEvent: {}
+[19.734313] (-) TimerEvent: {}
+[19.835034] (-) TimerEvent: {}
+[19.935731] (-) TimerEvent: {}
+[20.036530] (-) TimerEvent: {}
+[20.137273] (-) TimerEvent: {}
+[20.238003] (-) TimerEvent: {}
+[20.338728] (-) TimerEvent: {}
+[20.439480] (-) TimerEvent: {}
+[20.540255] (-) TimerEvent: {}
+[20.640989] (-) TimerEvent: {}
+[20.741704] (-) TimerEvent: {}
+[20.842489] (-) TimerEvent: {}
+[20.943208] (-) TimerEvent: {}
+[21.043942] (-) TimerEvent: {}
+[21.144671] (-) TimerEvent: {}
+[21.245445] (-) TimerEvent: {}
+[21.346213] (-) TimerEvent: {}
+[21.446949] (-) TimerEvent: {}
+[21.547656] (-) TimerEvent: {}
+[21.648427] (-) TimerEvent: {}
+[21.749211] (-) TimerEvent: {}
+[21.849938] (-) TimerEvent: {}
+[21.950685] (-) TimerEvent: {}
+[22.051441] (-) TimerEvent: {}
+[22.152199] (-) TimerEvent: {}
+[22.253002] (-) TimerEvent: {}
+[22.353714] (-) TimerEvent: {}
+[22.454481] (-) TimerEvent: {}
+[22.555237] (-) TimerEvent: {}
+[22.656015] (-) TimerEvent: {}
+[22.756755] (-) TimerEvent: {}
+[22.857559] (-) TimerEvent: {}
+[22.958326] (-) TimerEvent: {}
+[23.059020] (-) TimerEvent: {}
+[23.159746] (-) TimerEvent: {}
+[23.260495] (-) TimerEvent: {}
+[23.361220] (-) TimerEvent: {}
+[23.461963] (-) TimerEvent: {}
+[23.562680] (-) TimerEvent: {}
+[23.663441] (-) TimerEvent: {}
+[23.764174] (-) TimerEvent: {}
+[23.864965] (-) TimerEvent: {}
+[23.965830] (-) TimerEvent: {}
+[24.066547] (-) TimerEvent: {}
+[24.167283] (-) TimerEvent: {}
+[24.268020] (-) TimerEvent: {}
+[24.368967] (-) TimerEvent: {}
+[24.470060] (-) TimerEvent: {}
+[24.570763] (-) TimerEvent: {}
+[24.671521] (-) TimerEvent: {}
+[24.772275] (-) TimerEvent: {}
+[24.873072] (-) TimerEvent: {}
+[24.973996] (-) TimerEvent: {}
+[25.074623] (-) TimerEvent: {}
+[25.175346] (-) TimerEvent: {}
+[25.276050] (-) TimerEvent: {}
+[25.376793] (-) TimerEvent: {}
+[25.477563] (-) TimerEvent: {}
+[25.578300] (-) TimerEvent: {}
+[25.679036] (-) TimerEvent: {}
+[25.779788] (-) TimerEvent: {}
+[25.880676] (-) TimerEvent: {}
+[25.981542] (-) TimerEvent: {}
+[26.082343] (-) TimerEvent: {}
+[26.183242] (-) TimerEvent: {}
+[26.284010] (-) TimerEvent: {}
+[26.384727] (-) TimerEvent: {}
+[26.485486] (-) TimerEvent: {}
+[26.586257] (-) TimerEvent: {}
+[26.687015] (-) TimerEvent: {}
+[26.787717] (-) TimerEvent: {}
+[26.888485] (-) TimerEvent: {}
+[26.989313] (-) TimerEvent: {}
+[27.090028] (-) TimerEvent: {}
+[27.190746] (-) TimerEvent: {}
+[27.291479] (-) TimerEvent: {}
+[27.392264] (-) TimerEvent: {}
+[27.493024] (-) TimerEvent: {}
+[27.593756] (-) TimerEvent: {}
+[27.694601] (-) TimerEvent: {}
+[27.795486] (-) TimerEvent: {}
+[27.896574] (-) TimerEvent: {}
+[27.997309] (-) TimerEvent: {}
+[28.098022] (-) TimerEvent: {}
+[28.198646] (-) TimerEvent: {}
+[28.299409] (-) TimerEvent: {}
+[28.400085] (-) TimerEvent: {}
+[28.500799] (-) TimerEvent: {}
+[28.601556] (-) TimerEvent: {}
+[28.702321] (-) TimerEvent: {}
+[28.803159] (-) TimerEvent: {}
+[28.903917] (-) TimerEvent: {}
+[29.004627] (-) TimerEvent: {}
+[29.105516] (-) TimerEvent: {}
+[29.206512] (-) TimerEvent: {}
+[29.307262] (-) TimerEvent: {}
+[29.408003] (-) TimerEvent: {}
+[29.508694] (-) TimerEvent: {}
+[29.609446] (-) TimerEvent: {}
+[29.710217] (-) TimerEvent: {}
+[29.810921] (-) TimerEvent: {}
+[29.911661] (-) TimerEvent: {}
+[30.012636] (-) TimerEvent: {}
+[30.113394] (-) TimerEvent: {}
+[30.214042] (-) TimerEvent: {}
+[30.314716] (-) TimerEvent: {}
+[30.415551] (-) TimerEvent: {}
+[30.516852] (-) TimerEvent: {}
+[30.618111] (-) TimerEvent: {}
+[30.719068] (-) TimerEvent: {}
+[30.806607] (learning_nodes) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[30.819293] (-) TimerEvent: {}
+[30.920084] (-) TimerEvent: {}
+[31.021085] (-) TimerEvent: {}
+[31.122418] (-) TimerEvent: {}
+[31.223578] (-) TimerEvent: {}
+[31.324342] (-) TimerEvent: {}
+[31.425205] (-) TimerEvent: {}
+[31.526096] (-) TimerEvent: {}
+[31.627230] (-) TimerEvent: {}
+[31.727956] (-) TimerEvent: {}
+[31.828642] (-) TimerEvent: {}
+[31.929510] (-) TimerEvent: {}
+[32.005594] (learning_nodes) StdoutLine: {'line': b'[ 75%] Built target talker\n'}
+[32.029732] (-) TimerEvent: {}
+[32.130399] (-) TimerEvent: {}
+[32.231012] (-) TimerEvent: {}
+[32.331645] (-) TimerEvent: {}
+[32.432262] (-) TimerEvent: {}
+[32.532860] (-) TimerEvent: {}
+[32.633540] (-) TimerEvent: {}
+[32.734156] (-) TimerEvent: {}
+[32.834771] (-) TimerEvent: {}
+[32.935417] (-) TimerEvent: {}
+[33.036012] (-) TimerEvent: {}
+[33.136611] (-) TimerEvent: {}
+[33.237265] (-) TimerEvent: {}
+[33.337830] (-) TimerEvent: {}
+[33.438479] (-) TimerEvent: {}
+[33.539043] (-) TimerEvent: {}
+[33.639640] (-) TimerEvent: {}
+[33.740303] (-) TimerEvent: {}
+[33.840994] (-) TimerEvent: {}
+[33.941617] (-) TimerEvent: {}
+[34.042265] (-) TimerEvent: {}
+[34.142913] (-) TimerEvent: {}
+[34.243513] (-) TimerEvent: {}
+[34.344157] (-) TimerEvent: {}
+[34.444736] (-) TimerEvent: {}
+[34.545345] (-) TimerEvent: {}
+[34.645987] (-) TimerEvent: {}
+[34.746612] (-) TimerEvent: {}
+[34.847294] (-) TimerEvent: {}
+[34.947941] (-) TimerEvent: {}
+[35.048509] (-) TimerEvent: {}
+[35.149157] (-) TimerEvent: {}
+[35.249756] (-) TimerEvent: {}
+[35.350393] (-) TimerEvent: {}
+[35.451023] (-) TimerEvent: {}
+[35.551629] (-) TimerEvent: {}
+[35.652302] (-) TimerEvent: {}
+[35.752947] (-) TimerEvent: {}
+[35.853551] (-) TimerEvent: {}
+[35.954227] (-) TimerEvent: {}
+[36.054849] (-) TimerEvent: {}
+[36.155460] (-) TimerEvent: {}
+[36.256027] (-) TimerEvent: {}
+[36.356648] (-) TimerEvent: {}
+[36.457350] (-) TimerEvent: {}
+[36.557997] (-) TimerEvent: {}
+[36.658601] (-) TimerEvent: {}
+[36.759256] (-) TimerEvent: {}
+[36.859911] (-) TimerEvent: {}
+[36.960533] (-) TimerEvent: {}
+[37.061196] (-) TimerEvent: {}
+[37.161775] (-) TimerEvent: {}
+[37.262417] (-) TimerEvent: {}
+[37.363007] (-) TimerEvent: {}
+[37.463601] (-) TimerEvent: {}
+[37.564231] (-) TimerEvent: {}
+[37.664832] (-) TimerEvent: {}
+[37.765533] (-) TimerEvent: {}
+[37.866170] (-) TimerEvent: {}
+[37.966799] (-) TimerEvent: {}
+[38.067457] (-) TimerEvent: {}
+[38.168078] (-) TimerEvent: {}
+[38.268636] (-) TimerEvent: {}
+[38.369284] (-) TimerEvent: {}
+[38.469936] (-) TimerEvent: {}
+[38.570533] (-) TimerEvent: {}
+[38.671169] (-) TimerEvent: {}
+[38.771735] (-) TimerEvent: {}
+[38.872398] (-) TimerEvent: {}
+[38.973016] (-) TimerEvent: {}
+[39.073635] (-) TimerEvent: {}
+[39.174289] (-) TimerEvent: {}
+[39.274937] (-) TimerEvent: {}
+[39.375520] (-) TimerEvent: {}
+[39.476158] (-) TimerEvent: {}
+[39.576758] (-) TimerEvent: {}
+[39.677407] (-) TimerEvent: {}
+[39.778056] (-) TimerEvent: {}
+[39.878981] (-) TimerEvent: {}
+[39.979816] (-) TimerEvent: {}
+[40.080805] (-) TimerEvent: {}
+[40.181746] (-) TimerEvent: {}
+[40.282693] (-) TimerEvent: {}
+[40.383545] (-) TimerEvent: {}
+[40.484217] (-) TimerEvent: {}
+[40.584834] (-) TimerEvent: {}
+[40.685472] (-) TimerEvent: {}
+[40.786070] (-) TimerEvent: {}
+[40.886706] (-) TimerEvent: {}
+[40.987364] (-) TimerEvent: {}
+[41.088009] (-) TimerEvent: {}
+[41.188587] (-) TimerEvent: {}
+[41.289239] (-) TimerEvent: {}
+[41.389848] (-) TimerEvent: {}
+[41.490545] (-) TimerEvent: {}
+[41.591214] (-) TimerEvent: {}
+[41.692024] (-) TimerEvent: {}
+[41.793087] (-) TimerEvent: {}
+[41.893748] (-) TimerEvent: {}
+[41.994677] (-) TimerEvent: {}
+[42.096244] (-) TimerEvent: {}
+[42.197036] (-) TimerEvent: {}
+[42.232504] (learning_nodes) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener\x1b[0m\n'}
+[42.297243] (-) TimerEvent: {}
+[42.398130] (-) TimerEvent: {}
+[42.499588] (-) TimerEvent: {}
+[42.600737] (-) TimerEvent: {}
+[42.701643] (-) TimerEvent: {}
+[42.802736] (-) TimerEvent: {}
+[42.903668] (-) TimerEvent: {}
+[43.004767] (-) TimerEvent: {}
+[43.105590] (-) TimerEvent: {}
+[43.206395] (-) TimerEvent: {}
+[43.307264] (-) TimerEvent: {}
+[43.407976] (-) TimerEvent: {}
+[43.508546] (-) TimerEvent: {}
+[43.609248] (-) TimerEvent: {}
+[43.640321] (learning_nodes) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[43.688286] (learning_nodes) CommandEnded: {'returncode': 0}
+[43.690076] (learning_nodes) JobProgress: {'identifier': 'learning_nodes', 'progress': 'install'}
+[43.709414] (-) TimerEvent: {}
+[43.732542] (learning_nodes) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes'], 'cwd': '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes', 'env': OrderedDict({'USER': 'sofiadeck', 'SSH_CLIENT': '192.168.1.85 60447 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/sofiadeck', 'OLDPWD': '/home/sofiadeck/learning_ros_ws', 'LESS': '-R', 'SSH_TTY': '/dev/pts/0', 'ZSH': '/home/sofiadeck/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.6.9', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sofiadeck', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_DOMAIN_ID': '0', 'SHELL': '/usr/bin/zsh', 'LC_TERMINAL': 'iTerm2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes', 'SSH_CONNECTION': '192.168.1.85 60447 192.168.1.102 22', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[43.767406] (learning_nodes) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.768344] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/lib/learning_nodes/talker\n'}
+[43.778297] (learning_nodes) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/lib/learning_nodes/talker" to ""\n'}
+[43.778962] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/lib/learning_nodes/listener\n'}
+[43.809574] (-) TimerEvent: {}
+[43.810084] (learning_nodes) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/lib/learning_nodes/listener" to ""\n'}
+[43.810860] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/ament_index/resource_index/package_run_dependencies/learning_nodes\n'}
+[43.812666] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/ament_index/resource_index/parent_prefix_path/learning_nodes\n'}
+[43.814425] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/environment/ament_prefix_path.sh\n'}
+[43.815655] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/environment/ament_prefix_path.dsv\n'}
+[43.816900] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/environment/path.sh\n'}
+[43.818297] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/environment/path.dsv\n'}
+[43.819447] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/local_setup.bash\n'}
+[43.820674] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/local_setup.sh\n'}
+[43.821946] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/local_setup.zsh\n'}
+[43.823130] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/local_setup.dsv\n'}
+[43.824291] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/package.dsv\n'}
+[43.825767] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/ament_index/resource_index/packages/learning_nodes\n'}
+[43.827289] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/cmake/learning_nodesConfig.cmake\n'}
+[43.828407] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/cmake/learning_nodesConfig-version.cmake\n'}
+[43.829570] (learning_nodes) StdoutLine: {'line': b'-- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/package.xml\n'}
+[43.836230] (learning_nodes) CommandEnded: {'returncode': 0}
+[43.909788] (-) TimerEvent: {}
+[43.943356] (learning_nodes) JobEnded: {'identifier': 'learning_nodes', 'rc': 0}
+[43.945750] (-) EventReactorShutdown: {}

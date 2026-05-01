@@ -1,0 +1,68 @@
+[0.062s] Invoking command in '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/sofiadeck/learning_ros_ws/learning_nodes -DCMAKE_INSTALL_PREFIX=/home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes
+[1.413s] -- The C compiler identification is GNU 13.3.0
+[2.356s] -- The CXX compiler identification is GNU 13.3.0
+[2.466s] -- Detecting C compiler ABI info
+[2.981s] -- Detecting C compiler ABI info - done
+[3.016s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.018s] -- Detecting C compile features
+[3.021s] -- Detecting C compile features - done
+[3.077s] -- Detecting CXX compiler ABI info
+[3.562s] -- Detecting CXX compiler ABI info - done
+[3.598s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.599s] -- Detecting CXX compile features
+[3.601s] -- Detecting CXX compile features - done
+[3.636s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.318s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.947s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[5.261s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[5.357s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[5.479s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.607s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.090s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[6.117s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[6.634s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[6.710s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[6.800s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.242s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[7.336s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.942s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.942s] -- Configured cppcheck include dirs: 
+[7.943s] -- Configured cppcheck exclude dirs and/or files: 
+[7.968s] -- Added test 'lint_cmake' to check CMake code style
+[8.035s] -- Added test 'uncrustify' to check C / C++ code style
+[8.036s] -- Configured uncrustify additional arguments: 
+[8.046s] -- Added test 'xmllint' to check XML markup files
+[8.056s] -- Configuring done (7.7s)
+[8.136s] -- Generating done (0.0s)
+[8.156s] -- Build files have been written to: /home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes
+[8.193s] Invoked command in '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/sofiadeck/learning_ros_ws/learning_nodes -DCMAKE_INSTALL_PREFIX=/home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes
+[8.199s] Invoking command in '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes -- -j4 -l4
+[8.437s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/minimal_subscriber.cpp.o[0m
+[8.438s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/minimal_publisher.cpp.o[0m
+[30.806s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[32.005s] [ 75%] Built target talker
+[42.231s] [100%] [32m[1mLinking CXX executable listener[0m
+[43.639s] [100%] Built target listener
+[43.687s] Invoked command in '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes -- -j4 -l4
+[43.732s] Invoking command in '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes
+[43.766s] -- Install configuration: ""
+[43.767s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/lib/learning_nodes/talker
+[43.777s] -- Set non-toolchain portion of runtime path of "/home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/lib/learning_nodes/talker" to ""
+[43.778s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/lib/learning_nodes/listener
+[43.809s] -- Set non-toolchain portion of runtime path of "/home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/lib/learning_nodes/listener" to ""
+[43.810s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/ament_index/resource_index/package_run_dependencies/learning_nodes
+[43.811s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/ament_index/resource_index/parent_prefix_path/learning_nodes
+[43.813s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/environment/ament_prefix_path.sh
+[43.814s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/environment/ament_prefix_path.dsv
+[43.816s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/environment/path.sh
+[43.817s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/environment/path.dsv
+[43.818s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/local_setup.bash
+[43.819s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/local_setup.sh
+[43.821s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/local_setup.zsh
+[43.822s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/local_setup.dsv
+[43.823s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/package.dsv
+[43.824s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/ament_index/resource_index/packages/learning_nodes
+[43.826s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/cmake/learning_nodesConfig.cmake
+[43.827s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/cmake/learning_nodesConfig-version.cmake
+[43.828s] -- Installing: /home/sofiadeck/learning_ros_ws/learning_nodes/install/learning_nodes/share/learning_nodes/package.xml
+[43.836s] Invoked command in '/home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/sofiadeck/learning_ros_ws/learning_nodes/build/learning_nodes

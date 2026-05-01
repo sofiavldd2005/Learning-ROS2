@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+
 find_package(std_msgs REQUIRED)
 
 if(BUILD_TESTING)
@@ -22,4 +23,19 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+
+
+# Add the publisher executable
+add_executable(talker src/minimal_publisher.cpp)
+ament_target_dependencies(talker rclcpp std_msgs)
+
+# Add the subscriber executable
+add_executable(listener src/minimal_subscriber.cpp)
+ament_target_dependencies(listener rclcpp std_msgs)
+
+# Tell ROS 2 where to install the executables so it can find them later
+install(TARGETS
+  talker
+  listener
+  DESTINATION lib/${PROJECT_NAME})
 ament_package()
