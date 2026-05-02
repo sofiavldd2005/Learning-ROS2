@@ -47,7 +47,14 @@ HIDE_UNDOC_CLASSES     = NO
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
 GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_EXTRA_STYLESHEET  = docs/style/doxygen-awesome.css \
+                         docs/style/doxygen-awesome-sidebar-only.css
 
+# --- Make Markdown look better ---
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
 # --- Graphics (Graphviz/Dot) ---
 # Set to YES since you installed graphviz via brew
 HAVE_DOT               = YES
