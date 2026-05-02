@@ -1,7 +1,7 @@
 #include <memory>
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
-
+#include "rclcpp/qos.hpp" // Include the QoS library
 class MinimalSubscriber : public rclcpp::Node
 {
 public:
@@ -9,8 +9,16 @@ public:
   {
     // Create a subscriber on the topic "/rocket_status"
     // When a message arrives, automatically trigger the topic_callback function
-    subscription_ = this->create_subscription<std_msgs::msg::String>(
-      "rocket_status", 10, std::bind(&MinimalSubscriber::topic_callback, this, std::placeholders::_1));
+	// 1. Create a QoS profile object. Start with KEEP_LAST depth of 10.
+	rclcpp::QoS sensor_qos_profile(10);
+
+	// 2. ModifyI its settings
+	sensor_qos_profile.best_effort();
+	sensor_qos_profile.durability_volatile();
+
+	// 3. Pass the object to your publisher or subscriber
+	subscription_ = this->create_subscription<std_msgs::msg::String>(
+			"fast_sensor_topic", sensor_qos_profile, std::bind(&MinimalSubscriber::topic_callback, this, std::placeholders::_1));
   }
 
 private:

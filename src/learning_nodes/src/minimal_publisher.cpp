@@ -2,6 +2,8 @@
 #include <memory>
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp" // The standard message type we are using
+#include "rclcpp/qos.hpp" // Include the QoS library
+#include "rclcpp/qos.hpp" // Include the QoS library
 
 using namespace std::chrono_literals;
 
@@ -11,8 +13,18 @@ class MinimalPublisher : public rclcpp::Node
 public:
   MinimalPublisher() : Node("erocket_status_publisher"), count_(0)
   {
-    // Create a publisher on the topic "/rocket_status"
-    // The "10" is the Quality of Service (QoS) queue size (keep the last 10 messages)
+    
+
+	// 1. Create a QoS profile object. Start with KEEP_LAST depth of 10.
+	rclcpp::QoS sensor_qos_profile(10);
+
+	// 2. Modify its settings
+	sensor_qos_profile.best_effort();
+	sensor_qos_profile.durability_volatile();
+	// Create a publusher on the topic "/rocket_status with the specified QoS
+	publisher_ = this->create_publisher<std_msgs::msg::String>(
+    "fast_sensor_topic", sensor_qos_profile);
+	
     publisher_ = this->create_publisher<std_msgs::msg::String>("rocket_status", 10);
     
     // Create a timer that fires every 500ms and calls the timer_callback function
