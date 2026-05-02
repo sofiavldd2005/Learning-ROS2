@@ -1,0 +1,72 @@
+# --- Project Related Settings ---
+PROJECT_NAME           = "Learning-ROS2"
+PROJECT_NUMBER         = 1.0
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRECTORIES  = NO
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+
+# --- Input Settings ---
+# Includes the root README, the C++ source, and the Python launch folder
+INPUT                  = README.md \
+                         NOTES.md \
+                         src/learning_nodes/src \
+                         src/learning_nodes/launch
+
+# Tells Doxygen which file types to look for
+FILE_PATTERNS          = *.cpp \
+                         *.hpp \
+                         *.py \
+                         *.md
+
+RECURSIVE              = YES
+
+# --- Exclude Build Artifacts ---
+# This prevents Doxygen from scanning thousands of files in build/install
+EXCLUDE                = build/ \
+                         install/ \
+                         log/
+
+# --- Python & Markdown Specifics ---
+# Maps .py files to the Python parser
+EXTENSION_MAPPING      = py=Python
+
+# Sets your README.md as the landing page of the documentation
+USE_MDFILE_AS_MAINPAGE = README.md
+
+# --- Extraction Settings ---
+# Since you have nodes in .cpp files without headers, these are necessary
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+# --- Build Settings ---
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+
+# --- Graphics (Graphviz/Dot) ---
+# Set to YES since you installed graphviz via brew
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 0
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = YES
+TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+
+# --- Path Stripping ---
+# This makes the file paths in the docs look cleaner by removing your local Mac path
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = .

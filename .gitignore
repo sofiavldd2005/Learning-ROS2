@@ -2,6 +2,8 @@ I# --- ROS 2 Build Artifacts ---
 build/
 install/
 log/
+docs/
+latex/
 
 # --- Python ---
 __pycache__/
