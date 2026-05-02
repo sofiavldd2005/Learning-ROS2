@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED) # for the service
 find_package(std_msgs REQUIRED)
+find_package(rclcpp_action REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -46,6 +47,14 @@ ament_target_dependencies(client rclcpp example_interfaces)
 add_executable(pid_tuner src/pid_tuner.cpp)
 ament_target_dependencies(pid_tuner rclcpp)
 
+
+add_executable(action_server src/fibonacci_server.cpp)
+ament_target_dependencies(action_server rclcpp rclcpp_action example_interfaces)
+
+
+add_executable(action_client src/fibonacci_client.cpp)
+ament_target_dependencies(action_client rclcpp rclcpp_action example_interfaces)
+
 # Tell ROS 2 where to install the executables so it can find them later
 install(TARGETS
   talker
@@ -53,6 +62,8 @@ install(TARGETS
   server
   client
   pid_tuner
+  action_server
+  action_client
   DESTINATION lib/${PROJECT_NAME})
 
   #launch 

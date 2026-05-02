@@ -93,3 +93,29 @@ A launch file is a Python script that tells the ROS 2 daemon:
     1. Which nodes to boot up.
     2. What initial Parameters to inject into them (so you don't have to use the CLI every time).
     3. How to rename (remap) topics if needed.
+--- 
+
+## TF2 (Transform Framework 2)
+
+Background system that tracks the relationship between every single coordinate frame in your robot over time.
+
+It organizes these frames into a strict parent-child tree structure. 
+For the E-Rocket, your tree might look like this:word -> base\_link (the rocket CoM) -> imu\_link (the sensor)TF2 is divided into two main jobs.
+
+### 1. TF Broadcasters (The Talkers)
+These are nodes that continuously publish the mathematical relationship (translation + rotation) between a parent frame and a child frame.
+
+- **Static Broadcasters**: the launch file might say, "The IMU (imu\_link) is permanently located exactly 0.1 meters above the CoM (base\_link), rotated 180 degrees." This never changes.
+
+- **Dynamic Broadcasters**: The mocap\_interface node will continuously read the VRPN cameras and broadcast, "At timestamp 1.52s, base\_link is located at [X, Y, Z] with quaternion [X, Y, Z, W] relative to world."
+
+### 2. TF Listeners (The Askers)
+The PID controller acts as a TF Listener. 
+
+When a sensor reading comes in, thr  C++ node simply asks the TF2 Buffer:"Hey TF2, give me the transform from world to tvc\_link exactly at timestamp 1.52s.
+"TF2 will automatically traverse the tree (world -> base\_link -> tvc\_link), multiply all the matrices together, interpolate the exact timestamps, and han the final transformation vector."
+
+
+
+
+
